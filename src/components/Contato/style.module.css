@@ -1,0 +1,219 @@
+.entreemContatotittle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    h2 {
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    p {
+        text-align: center;
+        padding: 20px 0px;
+        font-size: 18px;
+        max-width: 630px;
+    }
+}
+
+.infmsgContainer {
+    display: flex;
+    justify-content: center;
+    padding: 40px 50px;
+    gap: 12%;
+
+    .infdecontatoContainer {
+
+        .tittleifn {
+            h2 {
+                font-size: 25px;
+            }
+        }
+
+        .infcontactcontainer {
+
+
+            .infcontact {
+                display: flex;
+                align-items: center;
+                padding: 20px 0px;
+                gap: 20px;
+
+                .iconerede {
+                    padding: 15px 15px;
+                    width: 52px;
+                    height: 52px;
+                    border-radius: 8px;
+                    color: #3B82F6;
+                    background-color: #EEF2FF;
+                }
+
+                .textinf {
+
+                    h2 {
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: rgba(0, 0, 0, 0.726);
+                    }
+
+                    p {
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .enviarMensagem {
+
+        .tittleMsg {
+
+            h2 {
+                font-size: 25px;
+            }
+
+            p {
+                padding: 5px 0px;
+                color: rgba(0, 0, 0, 0.726);
+            }
+        }
+    }
+
+    .campos {
+        padding: 10px 0px;
+
+        .campoName {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                margin-top: 10px;
+                font-size: 20px;
+                font-weight: 550;
+            }
+
+            input {
+                margin-top: 10px;
+                padding: 14px;
+                width: 400px;
+                border-radius: 8px;
+                border: none;
+                outline: none;
+                background: #EEF2FF;
+
+                &::placeholder {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .campoEmail {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                margin-top: 10px;
+                font-size: 20px;
+                font-weight: 550;
+            }
+
+            input {
+                margin-top: 10px;
+                padding: 14px;
+                width: 400px;
+                border-radius: 8px;
+                border: none;
+                outline: none;
+                background: #EEF2FF;
+
+                &::placeholder {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .campoAssunto {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                margin-top: 10px;
+                font-size: 20px;
+                font-weight: 550;
+            }
+
+            input {
+                margin-top: 10px;
+                padding: 14px;
+                width: 400px;
+                border-radius: 8px;
+                border: none;
+                outline: none;
+                background: #EEF2FF;
+
+                &::placeholder {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .campoMensagem {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                margin-top: 10px;
+                font-size: 20px;
+                font-weight: 550;
+            }
+
+            textarea {
+                margin-top: 10px;
+                padding: 14px;
+                width: 400px;
+                height: 150px;
+                border-radius: 8px;
+                border: none;
+                outline: none;
+                background: #EEF2FF;
+                resize: none;
+
+                &::placeholder {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .btnEnviar {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+
+            button {
+                padding: 14px;
+                width: 100%;
+                border-radius: 8px;
+                border: none;
+                cursor: pointer;
+                background-color: #3b83f6ea;
+                color: aliceblue;
+
+                &:hover {
+                    background-color: #3b83f6cc;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
+
+
+    }
+}

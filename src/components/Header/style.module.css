@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;   
+    z-index: 20;
+
+    .name {
+        h3 {
+            font-size: 1.5rem;
+            font-family: "Permanent Marker", cursive;
+        }
+    }
+
+    nav {
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.0rem;
+            margin-left: 30px;
+        }
+    }
+
+    .idioma {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px 15px;
+        gap: 15px;
+
+        &:hover {
+            background-color: #F0F2F5;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: transparent;
+            border: transparent;
+            cursor: pointer;
+            font-weight: 600;
+        }
+    }
+}

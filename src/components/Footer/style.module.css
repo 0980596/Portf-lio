@@ -1,0 +1,46 @@
+footer {
+    margin-top: 50px;
+
+    .sobreMim {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        h3 {
+            font-family: "Permanent Marker", cursive;
+        }
+
+        .logos {
+            display: flex;
+            gap: 40px;
+
+            img {
+                width: 50px;
+                cursor: pointer;
+            }
+
+            a {
+                color: black;
+            }
+        }
+    }
+
+    .diretosreservados {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0px;
+
+        hr {
+            width: 70%;
+            height: 1px;
+            background-color: rgba(0, 0, 0, 0.603);
+        }
+
+        p {
+            padding: 40px 0px;
+            color: rgba(0, 0, 0, 0.603);
+        }
+    }
+}
