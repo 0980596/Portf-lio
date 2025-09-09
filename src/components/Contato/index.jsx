@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import style from "./style.module.css";
 
 import React, { useRef } from "react";
@@ -30,26 +30,42 @@ export default function Contato() {
       <div className={style.entreemContatotittle} id="contato">
         <h2>Entre em Contato</h2>
         <p>
-          Vamos conversar sobre seu próximo projeto! Estou sempre aberto a novas
-          oportunidades
+          Fique à vontade para entrar em contato comigo para qualquer oportunidade.
         </p>
       </div>
 
       <div className={style.infmsgContainer}>
+
         <div className={style.infdecontatoContainer}>
+
           <div className={style.tittleifn}>
             <h2>Informações de Contato</h2>
           </div>
 
           <div className={style.infcontactcontainer}>
             <div className={style.infcontact}>
+
               <Mail className={style.iconerede} />
+
               <div className={style.textinf}>
                 <h2>Email</h2>
                 <p>pedro000y@gmail.com</p>
               </div>
+
+            </div>
+
+            <div className={style.infcontact}>
+
+              <Phone className={style.iconerede} />
+
+              <div className={style.textinf}>
+                <h2>Telefone</h2>
+                <p>(16) 997425293</p>
+              </div>
+
             </div>
           </div>
+
         </div>
 
         <div className={style.enviarMensagem}>
@@ -62,45 +78,22 @@ export default function Contato() {
             <form ref={form} onSubmit={sendEmail}>
               <div className={style.campoName}>
                 <label htmlFor="name">Seu nome</label>
-                <input
-                  type="text"
-                  placeholder="Digite seu nome"
-                  id="name"
-                  name="name"
-                  required
-                />
+                <input type="text" placeholder="Digite seu nome" id="name" name="name" required />
               </div>
 
               <div className={style.campoEmail}>
                 <label htmlFor="email">Seu e-mail</label>
-                <input
-                  type="email"
-                  placeholder="Digite seu e-mail"
-                  id="email"
-                  name="email"
-                  required
-                />
+                <input type="email" placeholder="Digite seu e-mail" id="email" name="email" required />
               </div>
 
               <div className={style.campoAssunto}>
                 <label htmlFor="subject">Seu assunto</label>
-                <input
-                  type="text"
-                  placeholder="Digite seu Assunto"
-                  id="subject"
-                  name="subject"
-                  required
-                />
+                <input type="text" placeholder="Digite seu Assunto" id="subject" name="subject" required />
               </div>
 
               <div className={style.campoMensagem}>
                 <label htmlFor="message">Sua mensagem</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  placeholder="Digite sua mensagem"
-                  required
-                ></textarea>
+                <textarea name="message" id="message" placeholder="Digite sua mensagem" required></textarea>
               </div>
 
               <div className={style.btnEnviar}>
@@ -109,6 +102,7 @@ export default function Contato() {
             </form>
           </div>
         </div>
+
       </div>
     </>
   );

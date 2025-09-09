@@ -6,23 +6,19 @@ export default function Sobre() {
             <div className={style.quemsouContainer} id="sobre">
 
                 <div className={style.tittleSub}>
-                    <h3>QUEM SOU</h3>
+                    <h3>HABILIDADES</h3>
                     <h2>Sobre mim</h2>
                 </div>
 
                 <div className={style.desc}>
 
-                    <h3>Transformamos ideias em experiências digitais</h3>
+                    <h3>Competências em desenvolvimento</h3>
 
-                    <p>Acreditamos que <span>tecnologia e design caminham juntos para impulsionar negócios</span> e conectar
-                        marcas ao seu público de forma autêntica.</p>
+                    <p>Tenho habilidades em <span>React.js </span>e <span>React Native</span>, desenvolvendo aplicações web <span>responsivas</span> com <span>componentes reutilizáveis</span> e criando interfaces <span>intuitivas e funcionais</span>, sempre mantendo o código limpo e organizado.</p>
 
-                    <p>Nossa missão é <span>simplificar processos complexos e entregar soluções digitais</span> que unem
-                        estética, performance e usabilidade. Cada detalhe é pensado para valorizar sua marca e criar interfaces
-                        que encantam.</p>
+                    <p>Tenho conhecimento em <span>MySQL</span> e no uso de <span>JSON</span> para organizar e manipular dados de forma eficiente, além de experiência em integrar <span>APIs</span>, conectando front-end e back-end de maneira <span>segura e prática.</span></p>
 
-                    <p>Mais do que desenvolver, ajudamos sua marca a ganhar voz, traduzindo visão e valores em uma presença
-                        digital única e marcante.</p>
+                    <p>Estou sempre buscando <span>aprender mais, corrigir falhas e aplicar melhorias,</span> evoluindo constantemente como desenvolvedor.</p>
 
                 </div>
 

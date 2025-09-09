@@ -1,24 +1,35 @@
 import style from "./style.module.css";
 import { useState } from "react";
 
-import imgproject1 from "../../images/subs.avif";
+import inventory from "../../images/Inventory.png";
 import imgproject2 from "../../images/subs.avif";
 import imgproject3 from "../../images/subs.avif";
 
 import { Github, SquareArrowOutUpRight } from "lucide-react";
 
-import { motion } from 'framer-motion'; 
+import { motion } from 'framer-motion';
 
 export default function Projetos() {
     const [projetoAberto, setProjetoAberto] = useState(null);
     const [mostrarTodos, setMostrarTodos] = useState(false);
 
     const projetos = [
-        { id: 1, titulo: "E-commerce Platform", descricao: "Plataforma completa", imagem: imgproject1, sobre: "Detalhes do projeto", tecnologias: ["React", "Node.js"] },
+        {
+            id: 1, titulo: "Inventory",
+            descricao: "Projeto com o objetivo de organizar produtos de forma prática e resolver problemas como falta organização.",
+            imagem: inventory,
+            sobre: "Sistema simples e prático para cadastrar, editar e organizar produtos e categorias, facilitando a gestão de estoques de forma eficiente.",
+            tecnologias: ["React", "API", "CSS"]
+        },
+
         { id: 2, titulo: "E-commerce Platform", descricao: "Plataforma completa", imagem: imgproject2, sobre: "Detalhes do projeto", tecnologias: ["React", "Node.js"] },
+
         { id: 3, titulo: "E-commerce Platform", descricao: "Plataforma completa", imagem: imgproject3, sobre: "Detalhes do projeto", tecnologias: ["React", "Node.js"] },
-        { id: 4, titulo: "Outro Projeto", descricao: "Outro projeto", imagem: imgproject1, sobre: "Detalhes do projeto", tecnologias: ["React"] },
+
+        { id: 4, titulo: "Outro Projeto", descricao: "Outro projeto", imagem: imgproject2, sobre: "Detalhes do projeto", tecnologias: ["React"] },
+
         { id: 5, titulo: "Mais Um Projeto", descricao: "Mais um projeto", imagem: imgproject2, sobre: "Detalhes do projeto", tecnologias: ["Node.js"] },
+
         { id: 6, titulo: "Último Projeto", descricao: "Último projeto", imagem: imgproject3, sobre: "Detalhes do projeto", tecnologias: ["MongoDB"] },
     ];
 
@@ -35,7 +46,7 @@ export default function Projetos() {
                 <div className={style.projetos} id="projetos">
                     <div className={style.introCard}>
                         <h2>Meus Projetos</h2>
-                        <p>Aqui estão alguns projetos de design em que trabalhei. Quer ver mais? <span>Envie-me um e-mail</span>.</p>
+                        <p>Aqui estão alguns projetos em que trabalhei</p>
                     </div>
 
                     <div className={style.cards}>
@@ -88,7 +99,7 @@ export default function Projetos() {
                                 </div>
                                 <div className={style.acesso}>
                                     <div className={style.verCod}>
-                                        <button><Github size={20} /> Ver Código</button>
+                                        <a href="https://github.com/0980596/Inventory"><button><Github size={20} /> Ver Código</button></a>
                                     </div>
                                     <div className={style.verProject}>
                                         <button><SquareArrowOutUpRight size={20} /> Ver Projeto</button>
