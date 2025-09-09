@@ -11,13 +11,16 @@ export default function Contato() {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_pedroenviar", "template_sfzcc1p", form.current, {
-        publicKey: "w-8DdyzcR8J10Ccw2",
-      })
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      )
       .then(
         () => {
           alert("Mensagem enviada com sucesso!");
-          form.current.reset(); // limpa os campos depois do envio
+          form.current.reset();
         },
         (error) => {
           alert("Erro ao enviar: " + error.text);
@@ -37,35 +40,27 @@ export default function Contato() {
       <div className={style.infmsgContainer}>
 
         <div className={style.infdecontatoContainer}>
-
           <div className={style.tittleifn}>
             <h2>Informações de Contato</h2>
           </div>
 
           <div className={style.infcontactcontainer}>
             <div className={style.infcontact}>
-
               <Mail className={style.iconerede} />
-
               <div className={style.textinf}>
                 <h2>Email</h2>
                 <p>pedro000y@gmail.com</p>
               </div>
-
             </div>
 
             <div className={style.infcontact}>
-
               <Phone className={style.iconerede} />
-
               <div className={style.textinf}>
                 <h2>Telefone</h2>
-                <p>(16) 997425293</p>
+                <p>(16) 99742-5293</p>
               </div>
-
             </div>
           </div>
-
         </div>
 
         <div className={style.enviarMensagem}>
@@ -88,7 +83,7 @@ export default function Contato() {
 
               <div className={style.campoAssunto}>
                 <label htmlFor="subject">Seu assunto</label>
-                <input type="text" placeholder="Digite seu Assunto" id="subject" name="subject" required />
+                <input type="text" placeholder="Digite seu assunto" id="subject" name="subject" required />
               </div>
 
               <div className={style.campoMensagem}>
