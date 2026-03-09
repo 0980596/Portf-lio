@@ -1,0 +1,107 @@
+.heroC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .herodiv {
+
+        .herome {
+            width: 544px;
+            padding-top: 4rem;
+            padding: 28% 0px;
+
+            p {
+                font-size: 1.125rem;
+                color: var(--txt-medio);
+                max-width: 30rem;
+                margin: 2rem 0 0;
+                font-weight: 400;
+                line-height: 1.5;
+            }
+
+            .student {
+                h3 {
+                    color: var(--txt-weak-leabels);
+                    text-transform: uppercase;
+                    letter-spacing: 1.2px;
+                    margin-bottom: 1.4rem;
+                    font-size: .75rem;
+                    font-weight: 500;
+                    font-family: "JetBrains Mono", ui-monospace, "Cascadia Code", monospace;
+                }
+            }
+
+            .name {
+                h1 {
+                    color: var(--txt-strong);
+                    font-weight: 700;
+                    line-height: .95;
+                    font-size: clamp(3.5rem, 10vw, 7rem);
+                    letter-spacing: -.04em;
+                    text-transform: lowercase;
+                }
+            }
+
+            .herobtn {
+                display: flex;
+                align-items: center;
+                gap: .75rem;
+                padding: 2rem 0rem;
+
+                .btnlink {
+
+                    a {
+                        text-decoration: none;
+                        color: var(--txt-medio);
+                        font-size: 12px;
+                        font-weight: 500;
+                        letter-spacing: .02em;
+                        border: 1px solid var(--border-sombra-sutil);
+                        border-radius: 100px;
+                        padding: .4rem .75rem;
+                        transition: all .2s cubic-bezier(.4, 0, .2, 1);
+
+                        &:hover {
+                            color: var(--txt-hover);
+                            background: var(--hover-scrobar-dots);
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+
+@media (max-width: 640px) {
+    .heroC {
+        padding: 0 1.5rem;
+    }
+
+    .heroC .herodiv .herome {
+        width: 100%;
+        padding: 15% 0px;
+    }
+
+    .heroC .herodiv .herome p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 641px) {
+    .heroC {
+        padding: 0 2rem;
+    }
+
+    .heroC .herodiv .herome {
+        width: 100%;
+        padding: 20% 0px;
+    }
+}

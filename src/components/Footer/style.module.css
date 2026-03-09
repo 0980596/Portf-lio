@@ -1,0 +1,23 @@
+footer {
+    border-top: 1px solid var(--border-sombra-sutil);
+    margin-top: 3rem;
+    padding: 2rem 0;
+
+    .footer {
+        max-width: 52rem;
+        padding: 0 2rem;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        display: flex;
+
+        p {
+            color: var(--txt-weak-leabels);
+            font-size: .75rem;
+            letter-spacing: .02em;
+            font-weight: 400;
+        }
+
+    }
+
+}

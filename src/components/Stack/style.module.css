@@ -1,0 +1,91 @@
+.spaceStack {
+    padding: 5rem 0;
+    position: relative;
+
+    .container {
+        max-width: 52rem;
+        padding: 2rem;
+        margin: 0 auto;
+
+        .tittleStack {
+            display: flex;
+            border-bottom: 1px solid var(--border-sombra-sutil);
+            align-items: baseline;
+            gap: .75rem;
+            margin-bottom: 2rem;
+            padding: 0 0 1.25rem;
+
+            span {
+                font-family: "JetBrains Mono", ui-monospace, "Cascadia Code", monospace;
+                font-size: 12px;
+                color: var(--txt-weak-leabels);
+
+                letter-spacing: .05em;
+                white-space: nowrap;
+                flex-shrink: 0;
+                font-weight: 500;
+            }
+
+            h2 {
+                font-size: clamp(1.5rem, 3.5vw, 2rem);
+                color: var(--txt-strong);
+                letter-spacing: -.03em;
+                text-transform: lowercase;
+                margin: 0;
+                font-weight: 600;
+                line-height: 1.2;
+            }
+        }
+
+        .skillgroup {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 1.5rem;
+            display: grid;
+
+            @media (max-width: 640px) {
+                grid-template-columns: 1fr;
+            }
+
+            .skill {
+
+                h2 {
+                    font-family: "JetBrains Mono", ui-monospace, "Cascadia Code", monospace;
+                    font-size: .75rem;
+                    color: var(--txt-weak-leabels);
+                    letter-spacing: .08em;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                }
+
+                .skillItem {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: .375rem;
+                    margin-top: 20px;
+
+                    span {
+                        font-size: .875rem;
+                        color: var(--txt-medio);
+                        border: 1px solid var(--border-sombra-sutil);
+                        background: 0 0;
+                        border-radius: 999px;
+                        padding: .3rem .6rem;
+                        font-weight: 500;
+                        transition: all .2s cubic-bezier(.4, 0, .2, 1);
+
+                        &:hover {
+                            border-color: var(--hover-scrobar-dots);
+                            box-shadow: 0 8px 30px var(--border-sombra-sutil);
+                            transform: translateY(-2px);
+                            color: var(--hover-scrobar-dots);
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+    }
+}

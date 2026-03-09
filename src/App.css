@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 300 700;
+  src: url('./fonts/SpaceGrotesk.woff2') format('woff2');
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: var(--hover-scrobar-dots) transparent;
+  accent-color: var(--hover-scrobar-dots);
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--bg-geral);
+}
+
+:root {
+  --bg-geral: #fafafa;
+  --header-card-opacity: #f2f2f2b3;
+  --txt-strong: #000000e0;
+  --txt-medio: #0000008c;
+  --txt-weak-leabels: #00000059;
+  --border-sombra-sutil: #00000014;
+  --hover-scrobar-dots: #000;
+  --txt-hover: #fff;
+  --b-header: #ffffff26;
+}
+
+.dark {
+  --bg-geral: #000000;
+  --txt-strong: #ffffffeb;
+  --txt-medio: #ffffff80;
+  --border-sombra-sutil: #ffffff12;
+  --txt-weak-leabels: #ffffff4d;
+  --header-card-opacity: #0a0a0ad9;
+  --hover-scrobar-dots: #fff;
+  --txt-hover: #000;
+  --b-header: #ffffff0a;
+}
+
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-sombra-sutil);
+  border-radius: 2px;
+}
+
+::selection {
+  color: inherit;
+  background: 0 0;
+}

@@ -1,0 +1,85 @@
+.containercarrousel {
+    margin: 100px auto;
+    width: 50%;
+    overflow: hidden;
+    margin: 20px auto 10px auto;
+    /* top right bottom left */
+
+    .group {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1em;
+        width: max-content;
+        animation: spin 14s infinite linear;
+        padding-right: 1em;
+
+        .card {
+            flex: 0 0 5em;
+            padding: 10px;
+            font-size: 3rem;
+            text-align: center;
+            align-items: center;
+        }
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-33.33%);
+    }
+}
+
+.containertwo {
+    margin: 100px auto;
+    width: 50%;
+    overflow: hidden;
+    margin: 20px auto 10px auto;
+
+    .group {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1em;
+        width: max-content;
+        animation: spintwo 14s infinite linear;
+        padding-right: 1em;
+
+        .card {
+            flex: 0 0 5em;
+            padding: 10px;
+            font-size: 3rem;
+            text-align: center;
+            align-items: center;
+        }
+    }
+}
+
+@keyframes spintwo {
+    from {
+        transform: translateX(-33.33%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+@media (max-width: 640px) {
+    .containercarrousel,
+    .containertwo {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 641px) {
+    .containercarrousel,
+    .containertwo {
+        width: 80%;
+    }
+}
