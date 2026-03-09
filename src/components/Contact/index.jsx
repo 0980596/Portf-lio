@@ -51,9 +51,9 @@ export default function Contact() {
                         <div className={style.contactmy}>
                             <p>Estamos abertos a colaborações e serviços de consultoria. Entre em contato diretamente ou utilize o formulário ao lado.</p>
                             <div className={style.contactlinks}>
-                                <a target="_blank" href="mailto:pedro000y@gmail.com" >pedro000y@gmail.com</a>
-                                <a target="_blank" href="https://github.com/0980596">github.com/0980596</a>
-                                <a target="_blank" href="https://www.linkedin.com/in/pedro-am%C3%A2ncio-6bb579378/">linkedin.com/in/pedro-am%C3%A2ncio-6bb579378/</a>
+                                <a href="mailto:pedro000y@gmail.com" target="_blank" rel="noreferrer" >pedro000y@gmail.com</a>
+                                <a href="https://github.com/0980596" target="_blank" rel="noreferrer">github.com/0980596</a>
+                                <a href="https://www.linkedin.com/in/pedro-am%C3%A2ncio-6bb579378/" target="_blank" rel="noreferrer">linkedin.com/in/pedro-am%C3%A2ncio-6bb579378/</a>
                             </div>
                         </div>
 

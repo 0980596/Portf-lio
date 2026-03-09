@@ -1,7 +1,5 @@
 import style from "./style.module.css";
 
-import { useState } from "react";
-
 export default function Hero() {
 
     const links = [
@@ -39,7 +37,7 @@ export default function Hero() {
                         <div className={style.herobtn}>
                             {links.map((links, index) => (
                                 <div className={style.btnlink} key={index}>
-                                    <a target="_blank" href={links.link}>{links.name}</a>
+                                    <a href={links.link} target="_blank" rel="noreferrer">{links.name}</a>
                                 </div>
                             ))}
                         </div>

@@ -9,8 +9,6 @@ import Highlights from "../components/Highlights";
 import Projects from "../components/Projects";
 import Stack from "../components/Stack";
 
-import style from "../styles/home.module.css";
-
 export default function Home() {
     return (
         <>

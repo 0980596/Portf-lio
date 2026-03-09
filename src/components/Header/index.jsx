@@ -51,8 +51,7 @@ export default function Header() {
                     <div className={style.config}>
                         <Sun onClick={tooglethemetwo} />
                         <Moon onClick={toggleTheme} />
-                        <a target="_blank" href="https://github.com/0980596"><Github /></a>
-
+                        <a href="https://github.com/0980596" target="_blank" rel="noreferrer"><Github /></a>
                     </div>
                 </div>
 

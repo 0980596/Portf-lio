@@ -1,8 +1,6 @@
 import { ArrowUpRight, Star } from "lucide-react";
 import style from "./style.module.css";
 
-import { useState } from "react";
-
 export default function Projects() {
 
     const projects = [
