@@ -9,19 +9,33 @@ export default function Header() {
     );
 
     useEffect(() => {
-        // código que executa depois da renderização
-        document.documentElement.classList.toggle("dark", dark); //documentElement é o elemento <html> da página //classList manipula css -- 
-        // toggle pode add ou remover uma class
-        // se dark = true  → adiciona classe // se dark = false → remove classe // exp: dark = true <html class="dark"> // dark = false <html>
+        document.documentElement.classList.toggle("dark", dark);
         localStorage.setItem("theme", dark ? "dark" : "light");
-    }, [dark]); //rode esse efeito sempre que "dark" mudar 
+    }, [dark]);
+
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = scrollTop / docHeight;
+
+            const bar = document.getElementById("progress-bar");
+            if (bar) {
+                bar.style.transform = `scaleX(${progress})`;
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     const toggleTheme = () => { setDark(true) };
     const tooglethemetwo = () => { setDark(false) };
 
     return (
         <>
-            <div className={style.progressoBar}>
+            <div id="progress-bar" className={style.progressoBar}>
             </div>
 
             <header>

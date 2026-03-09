@@ -79,17 +79,7 @@ header {
     width: 100%;
     transform-origin: left;
     transform: scaleX(0);
-    will-change: transform;
-    animation: progresso linear;
-    animation-timeline: scroll();
 }
-
-@keyframes progresso {
-    to {
-        transform: scaleX(1);
-    }
-}
-
 
 @media (max-width: 640px) {
     header {
