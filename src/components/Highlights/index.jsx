@@ -21,11 +21,11 @@ export default function Highlights() {
         },
         {
             name: "150+",
-            desc: "commits em projetos."
+            desc: "Commits em projetos."
         },
         {
             name: "Top 8",
-            desc: "alunos do SENAI na unidade."
+            desc: "Alunos do SENAI na unidade."
         },
     ]
 

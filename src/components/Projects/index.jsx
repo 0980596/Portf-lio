@@ -5,6 +5,13 @@ export default function Projects() {
 
     const projects = [
         {
+            tech: "JSON | VS Code API ",
+            name: "CleanCode Dark",
+            desc: "Extensão de tema para VS Code criada para oferecer uma identidade visual moderna, organizada e agradável durante o desenvolvimento.",
+            sourc: "https://marketplace.visualstudio.com/items?itemName=pedroamancio.cleancode-dark",
+            live: "https://github.com/0980596/estencao-color"
+        },
+        {
             tech: "react",
             name: "Quiz dev",
             desc: "Quiz para desenvolvedores com perguntas de múltiplos níveis de dificuldade para testar conhecimentos em programação.",
@@ -15,16 +22,9 @@ export default function Projects() {
             tech: "react",
             name: "UI Color Lab",
             desc: "Ferramenta para desenvolvedores e designers que ajuda a escolher cores para diferentes elementos da interface, facilitando a criação de UIs mais clean e agradáveis.",
-            sourc: "",
-            live: ""
-        },
-        {
-            tech: "lorem",
-            name: "Lorem",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint officia dolore soluta beatae, unde culpa facilis, atque, quam ea ullam doloribus! Cumque, impedit quisquam iure fugit eligendi ipsum atque possimus!",
-            sourc: "",
-            live: ""
-        },
+            sourc: "https://github.com/0980596/Ui-color-Lab",
+            live: "https://ui-color-lab.vercel.app/"
+        }
     ]
 
     return (
@@ -55,8 +55,8 @@ export default function Projects() {
                             </div>
 
                             <div className={style.linksWork}>
-                                <a href="https://github.com/0980596/Inventory">View source<ArrowUpRight /></a>
-                                <a href="">Live<ArrowUpRight /></a>
+                                <a target="_blank" href="https://github.com/0980596/Inventory">View source<ArrowUpRight /></a>
+                                <a target="_blank" href="https://github.com/0980596/Inventory">Live<ArrowUpRight /></a>
                             </div>
 
                         </div>
@@ -77,8 +77,8 @@ export default function Projects() {
                             </div>
 
                             <div className={style.linksWork}>
-                                <a href="https://code-core-wheat.vercel.app/">View source<ArrowUpRight /></a>
-                                <a href="https://code-core-wheat.vercel.app/">Live<ArrowUpRight /></a>
+                                <a target="_blank" href="https://github.com/0980596/CodeCore">View source<ArrowUpRight /></a>
+                                <a target="_blank" href="https://code-core-wheat.vercel.app/">Live<ArrowUpRight /></a>
                             </div>
 
                         </div> {/* cardtwo */}
@@ -96,18 +96,18 @@ export default function Projects() {
                                 <h3>{project.name}</h3>
                                 <p>{project.desc}</p>
                                 <div className={style.btnsProject}>
-                                    <a href={project.sourc}>source<ArrowUpRight /></a>
-                                    <a href={project.live}>live<ArrowUpRight /></a>
+                                    <a target="_blank" href={project.sourc}>source<ArrowUpRight /></a>
+                                    <a target="_blank" href={project.live}>live<ArrowUpRight /></a>
                                 </div>
                             </div>
                         ))}
                         <div className={style.techProjecttwo} >
-                            <span>lorem</span>
-                            <h3>Lorem</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint officia dolore soluta beatae, unde culpa facilis, atque, quam ea ullam doloribus! Cumque, impedit quisquam iure fugit eligendi ipsum atque possimus!</p>
+                            <span>next.js | react</span>
+                            <h3>Digital Studio</h3>
+                            <p>Landing page de alto impacto visual desenvolvida para oferecer uma experiência imersiva, com animações fluidas e interação baseada no scroll.</p>
                             <div className={style.btnsProject}>
-                                <button>source<ArrowUpRight /></button>
-                                <a href="">live<ArrowUpRight /></a>
+                                <a target="_blank" href="https://github.com/0980596/Digital-Studio">source<ArrowUpRight /></a>
+                                <a target="_blank" href="https://digital-studio-one.vercel.app/">live<ArrowUpRight /></a>
                             </div>
                         </div>
                     </div>
