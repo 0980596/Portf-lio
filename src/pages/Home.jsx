@@ -2,6 +2,7 @@ import About from "../components/About";
 import Building from "../components/Building";
 import Carrossel from "../components/Carrossel";
 import Contact from "../components/Contact";
+import Contributions from "../components/Contributions";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -21,6 +22,7 @@ export default function Home() {
             <Stack />
             <Building />
             <Contact />
+            <Contributions />
             <Footer />
         </>
     )

@@ -5,7 +5,8 @@ import { useEffect, useState } from "react";
 export default function Header() {
 
     const [dark, setDark] = useState(
-        () => localStorage.getItem("theme") === "dark" //localStorage == salva dados no computador do usuario
+        () => localStorage.getItem("theme") === "dark"
+        //localStorage == salva dados no computador do usuario
     );
 
     useEffect(() => {

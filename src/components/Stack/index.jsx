@@ -49,8 +49,8 @@ export default function Stack() {
                                 <span>Linux</span>
                                 <span>Vercel</span>
 
-                                <span>Docker</span>
-                                <span>GitHub Actions</span>
+                                {/* <span>Docker</span>
+                                <span>GitHub Actions</span> */}
                             </div>
                         </div>
 

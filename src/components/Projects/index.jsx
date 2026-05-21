@@ -55,8 +55,8 @@ export default function Projects() {
                             </div>
 
                             <div className={style.linksWork}>
-                                <a target="_blank" href="https://github.com/0980596/Inventory">View source<ArrowUpRight /></a>
-                                <a target="_blank" href="https://github.com/0980596/Inventory">Live<ArrowUpRight /></a>
+                                <a target="_blank" rel="noreferrer" href="https://github.com/0980596/Inventory">View source<ArrowUpRight /></a>
+                                <a target="_blank" rel="noreferrer" href="https://github.com/0980596/Inventory">Live<ArrowUpRight /></a>
                             </div>
 
                         </div>
@@ -77,8 +77,8 @@ export default function Projects() {
                             </div>
 
                             <div className={style.linksWork}>
-                                <a target="_blank" href="https://github.com/0980596/CodeCore">View source<ArrowUpRight /></a>
-                                <a target="_blank" href="https://code-core-wheat.vercel.app/">Live<ArrowUpRight /></a>
+                                <a target="_blank" rel="noreferrer" href="https://github.com/0980596/CodeCore">View source<ArrowUpRight /></a>
+                                <a target="_blank" rel="noreferrer" href="https://code-core-wheat.vercel.app/">Live<ArrowUpRight /></a>
                             </div>
 
                         </div> {/* cardtwo */}
@@ -96,8 +96,8 @@ export default function Projects() {
                                 <h3>{project.name}</h3>
                                 <p>{project.desc}</p>
                                 <div className={style.btnsProject}>
-                                    <a target="_blank" href={project.sourc}>source<ArrowUpRight /></a>
-                                    <a target="_blank" href={project.live}>live<ArrowUpRight /></a>
+                                    <a target="_blank" rel="noreferrer" href={project.sourc}>source<ArrowUpRight /></a>
+                                    <a target="_blank" rel="noreferrer" href={project.live}>live<ArrowUpRight /></a>
                                 </div>
                             </div>
                         ))}
@@ -106,8 +106,8 @@ export default function Projects() {
                             <h3>Digital Studio</h3>
                             <p>Landing page de alto impacto visual desenvolvida para oferecer uma experiência imersiva, com animações fluidas e interação baseada no scroll.</p>
                             <div className={style.btnsProject}>
-                                <a target="_blank" href="https://github.com/0980596/Digital-Studio">source<ArrowUpRight /></a>
-                                <a target="_blank" href="https://digital-studio-one.vercel.app/">live<ArrowUpRight /></a>
+                                <a target="_blank" rel="noreferrer" href="https://github.com/0980596/Digital-Studio">source<ArrowUpRight /></a>
+                                <a target="_blank" rel="noreferrer" href="https://digital-studio-one.vercel.app/">live<ArrowUpRight /></a>
                             </div>
                         </div>
                     </div>
