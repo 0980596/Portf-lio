@@ -10,7 +10,7 @@ header {
         display: flex;
         align-items: center;
         border: 1px solid var(--border-sombra-sutil);
-        border-radius: 50px;
+        border-radius: 0.54rem;
         padding: 8px 10px;
 
         box-shadow: 0 2px 12px var(--border-sombra-sutil), inset 0 1px 0 var(--b-header);
