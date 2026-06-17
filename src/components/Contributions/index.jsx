@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState } from "react";
-import { Github } from "lucide-react";
 import style from "./style.module.css";
 
 const GITHUB_USERNAME = "0980596";
@@ -13,14 +12,6 @@ const dateFormatter = new Intl.DateTimeFormat("pt-BR", {
     year: "numeric",
     timeZone: "UTC",
 });
-
-function getContributionTotal(data) {
-    if (typeof data?.total?.lastYear === "number") {
-        return data.total.lastYear;
-    }
-
-    return data?.contributions?.reduce((total, day) => total + day.count, 0) ?? 0;
-}
 
 function buildCalendar(contributions) {
     if (!contributions.length) {
@@ -95,7 +86,6 @@ export default function Contributions() {
         };
     }, []);
 
-    const total = getContributionTotal(data);
     const { weeks, months } = useMemo(() => {
         const contributionDays = Array.isArray(data?.contributions) ? data.contributions : [];
 
