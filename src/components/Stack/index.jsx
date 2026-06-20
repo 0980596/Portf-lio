@@ -35,7 +35,7 @@ export default function Stack() {
                         <div className={style.skill}>
                             <h2>Backend e ferramentas</h2>
                             <div className={style.skillItem}>
-                                <span>FastAPI</span>
+                                {/* <span>FastAPI</span> */}
                                 <span>Git</span>
                                 <span>MySQL</span>
                                 <span>Insomnia</span>
