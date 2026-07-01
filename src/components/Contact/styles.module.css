@@ -1,0 +1,170 @@
+.spacing {
+    padding: 5rem 0;
+    position: relative;
+
+    .contactC {
+        max-width: 52rem;
+        padding: 2rem;
+        margin: 0 auto;
+
+        .contacttittle {
+            display: flex;
+            border-bottom: 1px solid var(--border-sombra-sutil);
+            align-items: baseline;
+            gap: .75rem;
+            margin-bottom: 2rem;
+            padding: 0 0 1.25rem;
+
+            span {
+                font-family: "JetBrains Mono", ui-monospace, "Cascadia Code", monospace;
+                font-size: 12px;
+                color: var(--txt-weak-leabels);
+
+                letter-spacing: .05em;
+                white-space: nowrap;
+                flex-shrink: 0;
+                font-weight: 500;
+            }
+
+            h2 {
+                font-size: clamp(1.5rem, 3.5vw, 2rem);
+                color: var(--txt-strong);
+                letter-spacing: -.03em;
+                text-transform: lowercase;
+                margin: 0;
+                font-weight: 600;
+                line-height: 1.2;
+            }
+        }
+
+        .contactSession {
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            display: grid;
+
+            @media (max-width: 640px) {
+                grid-template-columns: 1fr;
+            }
+
+            .contactmy {
+
+                p {
+                    font-size: .875rem;
+                    color: var(--txt-medio);
+                    margin-bottom: 1.5rem;
+                    line-height: 1.7;
+                }
+
+                .contactlinks {
+                    flex-direction: column;
+                    gap: .25rem;
+                    display: flex;
+
+                    a {
+                        color: var(--txt-medio);
+                        font-weight: 400;
+                        font-size: 14px;
+                        font-family: "JetBrains Mono", ui-monospace, "Cascadia Code", monospace;
+                        text-decoration: none;
+                        background: 0 0;
+                        align-items: center;
+                        gap: .5rem;
+                        padding: .6rem .75rem;
+                        display: flex;
+                        border-radius: .375rem;
+                        transition: all .2s cubic-bezier(.4, 0, .2, 1);
+
+                        &:hover {
+                            background-color: var(--hover-scrobar-dots)#0000000a;
+                            transform: translate(4px);
+                        }
+                    }
+                }
+            }
+
+            .contactform {
+                flex-direction: column;
+                gap: .75rem;
+                display: flex;
+
+                .formgroup {
+                    input {
+                        border: 1px solid var(--border-sombra-sutil);
+                        border-radius: .375rem;
+                        background: var(--bg-geral);
+                        width: 100%;
+                        color: var(--txt-strong);
+                        font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
+                        font-size: .875rem;
+                        resize: vertical;
+                        padding: .75rem 1rem;
+                        transition: all .2s cubic-bezier(.4, 0, .2, 1);
+                    }
+
+                    textarea {
+                        border: 1px solid var(--border-sombra-sutil);
+                        border-radius: .375rem;
+                        background: var(--bg-geral);
+                        width: 100%;
+                        color: var(--txt-strong);
+                        font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
+                        font-size: .875rem;
+                        resize: vertical;
+                        padding: .75rem 1rem;
+                        transition: all .2s cubic-bezier(.4, 0, .2, 1);
+                        height: 116px;
+                    }
+                }
+
+                button {
+                    color: var(--txt-strong);
+                    border: 1px solid var(--border-sombra-sutil);
+                    font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
+                    font-size: .875rem;
+                    cursor: pointer;
+                    background: 0 0;
+                    border-radius: 999px;
+                    align-self: flex-start;
+                    padding: .75rem 1.5rem;
+                    font-weight: 500;
+                    transition: all .2s cubic-bezier(.4, 0, .2, 1);
+
+                    &:hover {
+                        background-color: var(--hover-scrobar-dots);
+                        color: var(--txt-hover);
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.toast {
+    position: fixed;
+    right: 30px;
+    top: 20px;
+
+    border: 1px solid var(--border-sombra-sutil);
+    color: var(--txt-strong);
+
+    padding: 12px 20px;
+    border-radius: .375rem;
+
+    font-size: 14px;
+
+    animation: fadein 0.3s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
