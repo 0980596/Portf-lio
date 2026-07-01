@@ -1,4 +1,5 @@
 import { Moon, Sun } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 
@@ -65,7 +66,7 @@ export default function Header() {
                     <div className={styles.config}>
                         <Sun onClick={tooglethemetwo} />
                         <Moon onClick={toggleTheme} />
-                        <a href="https://github.com/0980596" target="_blank" rel="noreferrer">GH</a>
+                        <a href="https://github.com/0980596" target="_blank" rel="noreferrer"><FaGithub /></a>
                     </div>
                 </div>
 
