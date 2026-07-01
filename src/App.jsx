@@ -1,27 +1,14 @@
-import { useEffect } from "react";
-import Lenis from "lenis";
-import "./App.css";
-import RoutesApp from "./routes";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/home";
 
-function App() {
-  useEffect(() => {
-    const lenis = new Lenis();
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-
-    return () => {
-      lenis.destroy();
-    };
-  }, []);
-
+export default function App() {
   return (
-    <RoutesApp />
-  );
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  )
 }
-
-export default App;
