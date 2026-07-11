@@ -9,7 +9,7 @@ export default function Hero() {
         },
         {
             name: "github",
-            link: "https://github.com/0980596"
+            link: "https://github.com/PedroAmancioDev"
         },
         {
             name: "linkdin",

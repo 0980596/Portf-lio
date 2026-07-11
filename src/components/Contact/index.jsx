@@ -52,7 +52,7 @@ export default function Contact() {
                             <p>Estamos abertos a colaborações e serviços de consultoria. Entre em contato diretamente ou utilize o formulário ao lado.</p>
                             <div className={styles.contactlinks}>
                                 <a href="mailto:pedro000y@gmail.com" target="_blank" rel="noreferrer" >pedro000y@gmail.com</a>
-                                <a href="https://github.com/0980596" target="_blank" rel="noreferrer">github.com/0980596</a>
+                                <a href="https://github.com/PedroAmancioDev" target="_blank" rel="noreferrer">github.com/0980596</a>
                                 <a href="https://www.linkedin.com/in/pedro-am%C3%A2ncio-6bb579378/" target="_blank" rel="noreferrer">linkedin.com/in/pedro-am%C3%A2ncio-6bb579378/</a>
                             </div>
                         </div>
