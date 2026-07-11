@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import styles from "./styles.module.css";
 
-const GITHUB_USERNAME = "0980596";
+const GITHUB_USERNAME = "PedroAmancioDev";
 const API_URL = `https://github-contributions-api.jogruber.de/v4/${GITHUB_USERNAME}?y=last`;
 const REFRESH_INTERVAL = 60 * 60 * 1000;
 
