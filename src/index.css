@@ -69,7 +69,7 @@ body {
     --b-header: #ffffff0a;
 }
 
-:root {
+/* :root {
     --background:        #F4F4F5;
     --surface:           #F4F4F5b3;
     --foreground:        #050506e0;
@@ -91,7 +91,7 @@ body {
     --border-header:     #ffffff0a;
     --accent:            #FFF;
     --text-on-accent:    #050506;
-}
+} */
 
 
 ::-webkit-scrollbar {

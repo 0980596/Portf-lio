@@ -5,11 +5,12 @@ export default function Projects() {
 
     const projectSelect = [
         {
-            name: 'Inventory',
-            desc: 'Controlador de estoque para inventários desenvolvido em React. Gerencia produtos e categorias com opções de cadastro e edição, oferecendo uma interface simples para organização e controle de estoque.',
+
+            name: 'Find yours components',
+            desc: 'Biblioteca de componentes reutilizáveis para desenvolvimento de interfaces modernas. Desenvolvida em React (JSX + CSS Modules), disponibiliza um prompt para converter os componentes na tecnologia desejada.',
             tec: 'react',
-            sourc: 'https://github.com/0980596/Inventory',
-            live: 'https://github.com/0980596/Inventory'
+            sourc: 'https://github.com/PedroAmancioDev/find-your-components',
+            live: 'https://find-your-components.vercel.app/'
         },
         {
             name: 'Code-core',
@@ -30,17 +31,10 @@ export default function Projects() {
         },
         {
             tech: "react",
-            name: "Quiz dev",
-            desc: "Quiz para desenvolvedores com perguntas de múltiplos níveis de dificuldade para testar conhecimentos em programação.",
+            name: "LauroFX",
+            desc: "Website para streamer com integração à Twitch e YouTube, exibindo status da live, miniaturas atualizadas automaticamente e informações sobre equipamentos, comandos e agenda de transmissões.",
             sourc: "https://github.com/0980596/quiz",
             live: "https://quiz-smoky-iota.vercel.app/"
-        },
-        {
-            tech: "react",
-            name: "UI Color Lab",
-            desc: "Ferramenta para desenvolvedores e designers que ajuda a escolher cores para diferentes elementos da interface, facilitando a criação de UIs mais clean e agradáveis.",
-            sourc: "https://github.com/0980596/Ui-color-Lab",
-            live: "https://ui-color-lab.vercel.app/"
         }
     ]
 

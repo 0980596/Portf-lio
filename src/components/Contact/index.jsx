@@ -65,7 +65,7 @@ export default function Contact() {
                                 <input type="email" placeholder="Seu email" id="email" name="email" required />
                             </div>
                             <div className={styles.formgroup}>
-                                <textarea name="message" id="message" placeholder="Sua message" required></textarea>
+                                <textarea name="message" id="message" placeholder="Sua mensagen" required></textarea>
                             </div>
                             <button type="submit">enviar mensagem</button>
                         </form>
