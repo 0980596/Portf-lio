@@ -31,8 +31,7 @@ export default function Header() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    const toggleTheme = () => { setDark(true) };
-    const tooglethemetwo = () => { setDark(false) };
+    const toggleTheme = () => { setDark((prev) => !prev) };
 
     return (
         <>
@@ -46,26 +45,21 @@ export default function Header() {
                         <span>Amancio</span>
                     </div>
 
-                    <div className={styles.divider}>
-                        <hr />
-                    </div>
-
                     <nav>
                         <a href="#sobre">Sobre</a>
-                        <a href="#destaque">Destaques</a>
                         <a href="#projetos">Projetos</a>
                         <a href="#stack">Stack</a>
-                        <a href="#construindo">Construindo</a>
-                        <a href="#contato">Contato</a>
+                        <a href="#contato">
+                            <button>Contato</button>
+                        </a>
                     </nav>
 
-                    <div className={styles.divider}>
-                        <hr />
-                    </div>
-
                     <div className={styles.config}>
-                        <Sun onClick={tooglethemetwo} />
-                        <Moon onClick={toggleTheme} />
+                        {dark ? (
+                            <Sun onClick={toggleTheme} />
+                        ) : (
+                            <Moon onClick={toggleTheme} />
+                        )}
                         <a href="https://github.com/PedroAmancioDev" target="_blank" rel="noreferrer"><FaGithub /></a>
                     </div>
                 </div>
