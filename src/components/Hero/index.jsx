@@ -32,7 +32,7 @@ export default function Hero() {
                             <h1>Pedro</h1>
                         </div>
 
-                        <p>Eu crio ferramentas para desenvolvedores, sites para clientes e infraestrutura de código aberto.</p>
+                        <p>Desenvolvedor Full Stack | Web Pentesting</p>
 
                         <div className={styles.herobtn}>
                             {links.map((links, index) => (

@@ -13,11 +13,11 @@ export default function Projects() {
             live: 'https://find-your-components.vercel.app/'
         },
         {
-            name: 'Code-core',
-            desc: 'Biblioteca de componentes para desenvolvedores front-end. Fornece elementos reutilizáveis com design clean, minimalista e responsivo, focados em facilitar a construção de interfaces modernas e intuitivas.',
-            tec: 'react',
-            sourc: 'https://github.com/0980596/CodeCore',
-            live: 'https://code-core-wheat.vercel.app/'
+            name: 'Construindo',
+            desc: '...',
+            tec: '...',
+            sourc: '',
+            live: ''
         }
     ]
 
@@ -33,8 +33,8 @@ export default function Projects() {
             tech: "react",
             name: "LauroFX",
             desc: "Website para streamer com integração à Twitch e YouTube, exibindo status da live, miniaturas atualizadas automaticamente e informações sobre equipamentos, comandos e agenda de transmissões.",
-            sourc: "https://github.com/0980596/quiz",
-            live: "https://quiz-smoky-iota.vercel.app/"
+            sourc: "https://laurofxgg.com.br/",
+            live: "https://laurofxgg.com.br/"
         }
     ]
 
