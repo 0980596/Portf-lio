@@ -3,6 +3,24 @@ import styles from "./styles.module.css";
 
 export default function Projects() {
 
+    const projectSelect = [
+        {
+
+            name: 'Find yours components',
+            desc: 'Biblioteca de componentes reutilizáveis para desenvolvimento de interfaces modernas. Desenvolvida em React (JSX + CSS Modules), disponibiliza um prompt para converter os componentes na tecnologia desejada.',
+            tec: 'react',
+            sourc: 'https://github.com/PedroAmancioDev/find-your-components',
+            live: 'https://find-your-components.vercel.app/'
+        },
+        {
+            name: 'Construindo',
+            desc: '...',
+            tec: '...',
+            sourc: '',
+            live: ''
+        }
+    ]
+
     const projects = [
         {
             tech: "JSON | VS Code API ",
@@ -13,17 +31,10 @@ export default function Projects() {
         },
         {
             tech: "react",
-            name: "Quiz dev",
-            desc: "Quiz para desenvolvedores com perguntas de múltiplos níveis de dificuldade para testar conhecimentos em programação.",
-            sourc: "https://github.com/0980596/quiz",
-            live: "https://quiz-smoky-iota.vercel.app/"
-        },
-        {
-            tech: "react",
-            name: "UI Color Lab",
-            desc: "Ferramenta para desenvolvedores e designers que ajuda a escolher cores para diferentes elementos da interface, facilitando a criação de UIs mais clean e agradáveis.",
-            sourc: "https://github.com/0980596/Ui-color-Lab",
-            live: "https://ui-color-lab.vercel.app/"
+            name: "LauroFX",
+            desc: "Website para streamer com integração à Twitch e YouTube, exibindo status da live, miniaturas atualizadas automaticamente e informações sobre equipamentos, comandos e agenda de transmissões.",
+            sourc: "https://laurofxgg.com.br/",
+            live: "https://laurofxgg.com.br/"
         }
     ]
 
@@ -38,51 +49,25 @@ export default function Projects() {
                     </div>
 
                     <div className={styles.gridWork}>
-
-                        <div className={styles.cardwork}>
-
-                            <div className={styles.nameestar}>
-                                <h2>Featured</h2>
-                                <span><Star /> 0</span>
-                            </div>
-
-                            <h3>Inventory</h3>
-
-                            <p>Controlador de estoque para inventários desenvolvido em React. Gerencia produtos e categorias com opções de cadastro e edição, oferecendo uma interface simples para organização e controle de estoque.</p>
-
-                            <div className={styles.techWork}>
-                                <span>react</span>
-                            </div>
-
-                            <div className={styles.linksWork}>
-                                <a target="_blank" rel="noreferrer" href="https://github.com/0980596/Inventory">View source<ArrowUpRight /></a>
-                                <a target="_blank" rel="noreferrer" href="https://github.com/0980596/Inventory">Live<ArrowUpRight /></a>
-                            </div>
-
-                        </div>
-
-                        <div className={styles.cardwork}> {/* cardtwo */}
-
-                            <div className={styles.nameestar}>
-                                <h2>Featured</h2>
-                                <span><Star /> 0</span>
-                            </div>
-
-                            <h3>Code-core</h3>
-
-                            <p>Biblioteca de componentes para desenvolvedores front-end. Fornece elementos reutilizáveis com design clean, minimalista e responsivo, focados em facilitar a construção de interfaces modernas e intuitivas.</p>
-
-                            <div className={styles.techWork}>
-                                <span>react</span>
-                            </div>
-
-                            <div className={styles.linksWork}>
-                                <a target="_blank" rel="noreferrer" href="https://github.com/0980596/CodeCore">View source<ArrowUpRight /></a>
-                                <a target="_blank" rel="noreferrer" href="https://code-core-wheat.vercel.app/">Live<ArrowUpRight /></a>
-                            </div>
-
-                        </div> {/* cardtwo */}
-
+                        {projectSelect.map((select, index) => (
+                            <>
+                                <div className={styles.cardwork}>
+                                    <div className={styles.nameestar}>
+                                        <h2>Featured</h2>
+                                        <span><Star /> 0</span>
+                                    </div>
+                                    <h3>{select.name}</h3>
+                                    <p>{select.desc}</p>
+                                    <div className={styles.techWork}>
+                                        <span>{select.tec}</span>
+                                    </div>
+                                    <div className={styles.linksWork}>
+                                        <a target="_blank" rel="noreferrer" href={select.sourc}>View source<ArrowUpRight /></a>
+                                        <a target="_blank" rel="noreferrer" href={select.live}>Live<ArrowUpRight /></a>
+                                    </div>
+                                </div>
+                            </>
+                        ))}
                     </div>
 
                     <div className={styles.tittleProjects}>
@@ -101,17 +86,7 @@ export default function Projects() {
                                 </div>
                             </div>
                         ))}
-                        <div className={styles.techProjecttwo} >
-                            <span>next.js | react</span>
-                            <h3>Digital Studio</h3>
-                            <p>Landing page de alto impacto visual desenvolvida para oferecer uma experiência imersiva, com animações fluidas e interação baseada no scroll.</p>
-                            <div className={styles.btnsProject}>
-                                <a target="_blank" rel="noreferrer" href="https://github.com/0980596/Digital-Studio">source<ArrowUpRight /></a>
-                                <a target="_blank" rel="noreferrer" href="https://digital-studio-one.vercel.app/">live<ArrowUpRight /></a>
-                            </div>
-                        </div>
                     </div>
-
 
                 </div>
             </div>

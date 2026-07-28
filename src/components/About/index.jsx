@@ -13,9 +13,10 @@ export default function About() {
                     </div>
 
                     <div className={styles.abouttext}>
-                        <p>Eu escrevo software que é realmente entregue e usado. Meu trabalho abrange ferramentas para desenvolvedores e infraestrutura web em geral, utilizo ferramenas para design web como figma, jitter e canva.</p>
+                        <p>Formando em Sistemas para a Internet, com + 2 anos de experiência em desenvolvimento web. Nas horas vagas, estudo Web Pentesting, Vulnerability Analysis e arquitetura de sistemas.</p>
 
-                        <p>Eu desenvolvo em React - HTML/CSS/JS, Python, C, PHP e contribuo para projetos de código aberto que as pessoas realmente utilizam.</p>
+                        <p>Tenho interesse em desenvolvimento full stack, segurança de aplicações e arquitetura de sistemas, áreas nas quais continuo estudando diariamente.
+                        </p>
                     </div>
 
                 </div>

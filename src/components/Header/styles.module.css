@@ -1,20 +1,20 @@
 /* 832 */
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
     padding: 20px 0px;
+    max-width: 52rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 
     .heaerC {
         display: flex;
         align-items: center;
-        border: 1px solid var(--border-sombra-sutil);
+        justify-content: space-between;
+
         border-radius: 0.54rem;
         padding: 8px 10px;
-
-        box-shadow: 0 2px 12px var(--border-sombra-sutil), inset 0 1px 0 var(--b-header);
-        background-color: var(--header-card-opacity);
     }
 
     .name {
@@ -26,16 +26,9 @@ header {
         }
     }
 
-    .divider {
-        hr {
-            height: 20px;
-            background-color: var(--border-sombra-sutil);
-            color: var(--border-sombra-sutil);
-        }
-    }
-
     nav {
         display: flex;
+        align-items: center;
         gap: .3rem;
         padding: 0px 6px;
 
@@ -47,12 +40,25 @@ header {
 
             font-weight: 600;
         }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            background-color: var(--hover-scrobar-dots);
+            color: var(--txt-hover);
+
+            font-family: inherit;
+            font-size: .875rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
     }
 
     .config {
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: 1rem;
         padding: 0px 10px;
 
         a {
@@ -60,8 +66,8 @@ header {
         }
 
         svg {
-            width: 16px;
-            height: 16px;
+            width: 18px;
+            height: 18px;
             color: var(--txt-medio);
             cursor: pointer;
         }

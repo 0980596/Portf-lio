@@ -2,10 +2,10 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Carrossel from '../components/Carrossel';
 import About from '../components/About';
-import Highlights from '../components/Highlights';
+// import Highlights from '../components/Highlights';
 import Projects from '../components/Projects';
 import Stack from '../components/Stack';
-import Building from '../components/Building';
+// import Building from '../components/Building';
 import Contact from '../components/Contact';
 import Contributions from '../components/Contributions';
 import Footer from '../components/Footer';
@@ -19,10 +19,10 @@ export default function Home() {
       <Hero />
       <Carrossel />
       <About />
-      <Highlights />
+      {/* <Highlights /> */}
       <Projects />
       <Stack />
-      <Building />
+      {/* <Building /> */}
       <Contact />
       <Contributions />
       <Footer />

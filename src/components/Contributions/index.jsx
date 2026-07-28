@@ -105,7 +105,7 @@ export default function Contributions() {
         <section className={styles.contributions} id="contribuicoes">
             <div className={styles.container}>
                 <div className={styles.title}>
-                    <span>07</span>
+                    <span>05</span>
                     <h2>contribuições</h2>
                 </div>
 
@@ -153,7 +153,7 @@ export default function Contributions() {
                     </div>
 
                     <div className={styles.footer}>
-                        <span>{status === "error" ? "Nao foi possivel carregar agora. A pagina tenta novamente sozinha." : "Atualiza automaticamente a cada hora."}</span>
+                        <span>{status === "error" ? "Nao foi possivel carregar agora." : ""}</span>
 
                         <div className={styles.legend} aria-label="Legenda de contribuicoes">
                             <span>Menos</span>

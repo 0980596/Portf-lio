@@ -69,6 +69,30 @@ body {
     --b-header: #ffffff0a;
 }
 
+/* :root {
+    --background:        #F4F4F5;
+    --surface:           #F4F4F5b3;
+    --foreground:        #050506e0;
+    --muted:             #0505068c;
+    --faint:             #05050659;
+    --border:            #1D1D2114;
+    --border-header:     #ffffff26;
+    --accent:            #050506;
+    --text-on-accent:    #FFF;
+}
+
+.dark {
+    --background:        #050506;
+    --surface:           #101013d9;
+    --foreground:        #e4e4e7eb;
+    --muted:             #a1a1aa;
+    --faint:             #71717a;
+    --border:            #1D1D21;
+    --border-header:     #ffffff0a;
+    --accent:            #FFF;
+    --text-on-accent:    #050506;
+} */
+
 
 ::-webkit-scrollbar {
     width: 4px;

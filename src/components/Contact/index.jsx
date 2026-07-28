@@ -43,13 +43,13 @@ export default function Contact() {
                 <div className={styles.contactC}>
 
                     <div className={styles.contacttittle}>
-                        <span>06</span>
+                        <span>04</span>
                         <h2>contato</h2>
                     </div>
 
                     <div className={styles.contactSession}>
                         <div className={styles.contactmy}>
-                            <p>Estamos abertos a colaborações e serviços de consultoria. Entre em contato diretamente ou utilize o formulário ao lado.</p>
+                            <p>Entre em contato diretamente ou utilize o formulário ao lado.</p>
                             <div className={styles.contactlinks}>
                                 <a href="mailto:pedro000y@gmail.com" target="_blank" rel="noreferrer" >pedro000y@gmail.com</a>
                                 <a href="https://github.com/PedroAmancioDev" target="_blank" rel="noreferrer">https://github.com/PedroAmancioDev</a>
@@ -65,7 +65,7 @@ export default function Contact() {
                                 <input type="email" placeholder="Seu email" id="email" name="email" required />
                             </div>
                             <div className={styles.formgroup}>
-                                <textarea name="message" id="message" placeholder="Sua message" required></textarea>
+                                <textarea name="message" id="message" placeholder="Sua mensagen" required></textarea>
                             </div>
                             <button type="submit">enviar mensagem</button>
                         </form>

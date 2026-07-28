@@ -26,6 +26,11 @@
                 padding: 1.5rem 0;
                 position: relative;
 
+                &:last-child {
+                    border-bottom: none;
+                }
+
+
                 span {
                     color: var(--txt-weak-leabels);
                     font-size: 13px;
@@ -81,7 +86,7 @@
 
                     &:hover {
                         color: var(--txt-hover);
-                        background:  var(--hover-scrobar-dots);
+                        background: var(--hover-scrobar-dots);
                     }
                 }
 
@@ -309,7 +314,7 @@
                 }
 
                 &:hover {
-                    background-color:  var(--hover-scrobar-dots);
+                    background-color: var(--hover-scrobar-dots);
                     color: var(--txt-hover);
                 }
 
@@ -330,7 +335,7 @@
     h2 {
         font-family: "JetBrains Mono", ui-monospace, "Cascadia Code", monospace;
         font-size: 12px;
-        color:  var(--hover-scrobar-dots);
+        color: var(--hover-scrobar-dots);
         letter-spacing: .08em;
         text-transform: uppercase;
         font-weight: 500;
