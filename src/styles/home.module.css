@@ -1,0 +1,24 @@
+.sectionFrame {
+    position: relative;
+    border-top: 1px solid var(--border-sombra-sutil);
+    border-bottom: 1px solid var(--border-sombra-sutil);
+}
+
+.sectionFrame::before,
+.sectionFrame::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--border-sombra-sutil);
+    pointer-events: none;
+}
+
+.sectionFrame::before {
+    left: max(1rem, calc(50% - 26rem));
+}
+
+.sectionFrame::after {
+    right: max(1rem, calc(50% - 26rem));
+}

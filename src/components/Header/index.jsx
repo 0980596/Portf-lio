@@ -19,7 +19,7 @@ export default function Header() {
         const handleScroll = () => {
             const scrollTop = window.scrollY;
             const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const progress = scrollTop / docHeight;
+            const progress = docHeight > 0 ? scrollTop / docHeight : 0;
 
             const bar = document.getElementById("progress-bar");
             if (bar) {
@@ -38,9 +38,11 @@ export default function Header() {
             <div id="progress-bar" className={styles.progressoBar}>
             </div>
 
-            <header>
+            <header className={styles.headerFrame}>
+                <div className={styles.sideLeft} aria-hidden="true"></div>
+                <div className={styles.sideRight} aria-hidden="true"></div>
 
-                <div className={styles.heaerC}>
+                <div className={styles.navBar}>
                     <div className={styles.name}>
                         <span>Amancio</span>
                     </div>
@@ -63,7 +65,6 @@ export default function Header() {
                         <a href="https://github.com/PedroAmancioDev" target="_blank" rel="noreferrer"><FaGithub /></a>
                     </div>
                 </div>
-
             </header>
         </>
     )

@@ -16,15 +16,29 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Hero />
-      <Carrossel />
-      <About />
+      <div className={styles.sectionFrame}>
+        <Hero />
+      </div>
+      <div className={styles.sectionFrame}>
+        <Carrossel />
+      </div>
+      <div className={styles.sectionFrame}>
+        <About />
+      </div>
       {/* <Highlights /> */}
-      <Projects />
-      <Stack />
+      <div className={styles.sectionFrame}>
+        <Projects />
+      </div>
+      <div className={styles.sectionFrame}>
+        <Stack />
+      </div>
       {/* <Building /> */}
-      <Contact />
-      <Contributions />
+      <div className={styles.sectionFrame}>
+        <Contact />
+      </div>
+      <div className={styles.sectionFrame}>
+        <Contributions />
+      </div>
       <Footer />
     </>
   );

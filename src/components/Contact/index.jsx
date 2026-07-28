@@ -37,6 +37,7 @@ export default function Contact() {
     return (
         <>
             <div className={styles.spacing} id="contato">
+                <div className={styles.sideLeft} aria-hidden="true"></div>
                 
                 {msg && <div className={styles.toast}>{msg}</div>}
 
@@ -73,6 +74,7 @@ export default function Contact() {
 
                 </div>
 
+                <div className={styles.sideRight} aria-hidden="true"></div>
             </div>
         </>
     )

@@ -41,6 +41,8 @@ export default function Projects() {
     return (
         <>
             <div className={styles.space} id="projetos">
+                <div className={styles.sideLeft} aria-hidden="true"></div>
+
                 <div className={styles.containerProjects}>
 
                     <div className={styles.tittleDestaque}>
@@ -89,6 +91,8 @@ export default function Projects() {
                     </div>
 
                 </div>
+
+                <div className={styles.sideRight} aria-hidden="true"></div>
             </div>
         </>
     )

@@ -25,28 +25,32 @@ export default function Carrossel() {
     ];
 
     return (
-        <>
-            <div className={styles.containercarrousel}>
-                <div className={styles.group}>
-                    {[...rowOne, ...rowOne, ...rowOne].map((item, i) => (
-                        <div className={styles.card} key={i}>
-                            <img src={item.src} height="36" alt={item.alt} />
-                        </div>
-                    ))}
+        <div className={styles.carrosselWrapper}>
+            <div className={styles.sideLeft} aria-hidden="true"></div>
+
+            <div className={styles.centerContent}>
+                <div className={styles.containercarrousel}>
+                    <div className={styles.group}>
+                        {[...rowOne, ...rowOne, ...rowOne].map((item, i) => (
+                            <div className={styles.card} key={i}>
+                                <img src={item.src} height="36" alt={item.alt} />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <div className={styles.containertwo}>
+                    <div className={styles.group}>
+                        {[...rowTwo, ...rowTwo, ...rowTwo].map((item, i) => (
+                            <div className={styles.card} key={i}>
+                                <img src={item.src} height="36" alt={item.alt} />
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
 
-            <div className={styles.containertwo}>
-                <div className={styles.group}>
-                    {[...rowTwo, ...rowTwo, ...rowTwo].map((item, i) => (
-                        <div className={styles.card} key={i}>
-                            <img src={item.src} height="36" alt={item.alt} />
-                        </div>
-                    ))}
-                </div>
-            </div>
-
-
-        </>
+            <div className={styles.sideRight} aria-hidden="true"></div>
+        </div>
     );
 }
