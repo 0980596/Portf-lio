@@ -5,19 +5,19 @@ export default function Projects() {
 
     const projectSelect = [
         {
+            name: 'Github Analytics',
+            desc: 'Aplicação full stack que consome a API do GitHub para transformar dados de perfis e repositórios em uma interface de análise visual. O projeto conta com frontend em React + TypeScript e backend responsável pela comunicação com a API, organização dos dados e disponibilização das informações para a aplicação.',
+            tec: 'react',
+            sourc: 'https://github.com/PedroAmancioDev/github-analytics',
+            live: 'https://github-analytics-seven.vercel.app/'
+        },
+        {
 
             name: 'Find yours components',
             desc: 'Biblioteca de componentes reutilizáveis para desenvolvimento de interfaces modernas. Desenvolvida em React (JSX + CSS Modules), disponibiliza um prompt para converter os componentes na tecnologia desejada.',
             tec: 'react',
             sourc: 'https://github.com/PedroAmancioDev/find-your-components',
             live: 'https://find-your-components.vercel.app/'
-        },
-        {
-            name: 'Construindo',
-            desc: '...',
-            tec: '...',
-            sourc: '',
-            live: ''
         }
     ]
 
