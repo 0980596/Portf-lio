@@ -43,6 +43,7 @@ html.lenis body {
 body {
     font-family: 'Space Grotesk', sans-serif;
     background-color: var(--bg-geral);
+
 }
 
 :root {
@@ -111,4 +112,12 @@ body {
 ::selection {
     color: inherit;
     background: 0 0;
+}
+
+input {
+    background: transparent !important;
+}
+
+textarea {
+    background: transparent !important;
 }

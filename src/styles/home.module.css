@@ -1,0 +1,18 @@
+.gridBg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+
+    background-image:
+        linear-gradient(to right, var(--header-card-opacity) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--header-card-opacity) 1px, transparent 1px);
+
+    /* Tamanho dos quadrados (maior = mais leve e clean) */
+    background-size: 60px 60px;
+   
+
+    transform: rotate(12deg);
+}

@@ -246,7 +246,7 @@
     .cardwork {
         border: 1px solid var(--border-sombra-sutil);
         border-radius: .625rem;
-        background: var(--header-card-opacity);
+        background: transparent;
         padding: 2rem;
         position: relative;
         transition: all .2s cubic-bezier(.4, 0, .2, 1);

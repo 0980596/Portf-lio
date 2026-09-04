@@ -19,6 +19,7 @@ export default function Stack() {
                             <div className={styles.skillItem}>
                                 <span>React</span>
                                 <span>JavaScript</span>
+                                <span>TypeScript</span>
                                 <span>HTML</span>
                                 <span>CSS</span>
                                 <span>MySQL</span>
